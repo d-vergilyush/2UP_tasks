@@ -1,0 +1,137 @@
+.container_bear
+	width: 400px
+	height: 355px
+	background: #51835d
+
+.bear
+	position: absolute
+	top: 52%
+	left: 50%
+	transform: translate(-50%, -50%)
+	perspective: 250px
+	width: 210px
+	height: 220px
+	&:before
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, .5)
+		background: #92806a
+		transform: rotateX(5deg)
+		transform-origin: 50% 100%
+		border-radius: 80px 80px 0 0
+		height: 100%
+		width: 100%
+		position: absolute
+		content: ''
+	&__ear
+		position: absolute
+		height: 87px
+		width: 87px
+		top: -20px
+		background-color: #92806a
+		border-radius: 50%
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, .5)
+		z-index: -1
+		&_left
+			left: -25px
+		&_right
+			right: -25px
+	&__inner-ear
+		position: absolute
+		height: 44px
+		width: 44px
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background-color: #e1dfb6
+		border-radius: 50%
+	&__hair
+		position: absolute
+		background-color: #e1dfb6
+		top: 9%
+		left: 50%
+		transform: translateX(-50%)
+		width: 3px
+		height: 16px
+		border-radius: 10%
+		transform: rotate(15deg)
+		&:before, &:after
+			position: absolute
+			background-color: #e1dfb6
+			content: ''
+			width: 3px
+			height: 16px
+			border-radius: 10%
+		&:before
+			top: 2px
+			left: -7px
+		&:after
+			top: -2px
+			right: -7px
+	&__face
+		position: absolute
+		width: 92px
+		height: 110px
+		top: 32%
+		transform: translateX(-50%)
+		left: 50%
+		border-radius: 43% 43% 30% 30% / 50% 50% 30% 30%
+		background-color: #e1dfb6
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, .3)
+	&__nose
+		position: absolute
+		width: 50px
+		height: 40px
+		top: 14%
+		left: 50%
+		transform: translateX(-50%)
+		border-radius: 37%
+		background-color: #000
+		&:after
+			position: absolute
+			content: ''
+			width: 10px
+			height: 3px
+			top: 25%
+			right: 20%
+			background-color: #fff
+	&__mouth
+		height: 25px
+		width: 5px
+		background: #000
+		margin: 0 auto
+		position: absolute
+		top: 43%
+		left: 50%
+		transform: translateX(-50%)
+		&:before, &:after
+			position: absolute
+			content: ''
+			width: 30px
+			height: 30px
+			top: 5px
+			border-radius: 50%
+			border-bottom: 5px solid  #000
+			border-right: 5px solid #000
+			border-left: 5px solid transparent
+			border-top: 5px solid transparent
+			transform: rotate(45deg)
+		&:after
+			right: calc(100% - 5px)
+	&__eye
+		position: absolute
+		width: 20px
+		height: 14px
+		top: 32%
+		border-radius: 10px/7px
+		background-color: #000
+		&:after
+			position: absolute
+			content: ''
+			width: 4px
+			height: 2px
+			top: 25%
+			right: 20%
+			background-color: #fff
+		&_left
+			left: 27%
+		&_right
+			right: 27%
