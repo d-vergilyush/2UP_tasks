@@ -1,0 +1,33 @@
+.container_animation
+	width: 400px
+	height: 400px
+	display: flex
+	background-color: #f39c11
+	display: flex
+	align-items: center
+	justify-content: center
+.animation
+	height: 30px
+	display: flex
+	overflow: hidden
+	font-size: 28px
+	font-family: sans-serif
+	color: #ecf0f1
+	&__text
+		margin-right: 10px
+		line-height: 1
+	&__list
+		font-weight: 700
+		animation: change 8s infinite
+		&-item
+			line-height: 1.1
+
+$n: 4
+$dur: 8
+
+@keyframes change
+	@for $i from 0 to $n
+		#{100 / $n * $i * 1%}, #{(100 / $n * ($i + 1) - $dur)* 1%} 
+			transform: translateY(-#{($i) * 30}px)
+	100%
+		transform: translateY(-#{($n) * 30}px)
