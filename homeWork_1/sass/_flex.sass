@@ -1,5 +1,5 @@
 .container_flex
-	max-height: 600px
+	max-height: 840px
 	max-width: calc(100% - 30px)
 	display: flex
 	flex-direction: column
@@ -25,10 +25,12 @@
 	background-color: #84a02b
 	text-transform: lowercase
 	overflow: hidden
-	&:nth-of-type(1), &:nth-of-type(2)
-		margin-right: 20px
 	&_big
 		height: 260px
 	&_small
 		height: 120px
+	&_new
+		background-color: #559364
 
+// в прошлый раз забыла убрать margin-right :) он не нужен
+// Я знаю, как ведёт себя align-content: space-between
