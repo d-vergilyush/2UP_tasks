@@ -1,3 +1,5 @@
+var prName = 'homeWork_1';
+
 var gulp                = require('gulp');
 var browserSync         = require('browser-sync');
 var sass                = require('gulp-sass');
@@ -8,22 +10,22 @@ var concatCss           = require('gulp-concat-css');
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
-        server: "src/"
+        server: prName + "/"
     });
 
-    gulp.watch("src/sass/*.sass", ['sass']);
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch(prName + "/sass/**/*.sass", ['sass']);
+    gulp.watch(prName + "/**/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
-    return gulp.src("src/sass/*.sass")
+    return gulp.src(prName + "/sass/*.sass")
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
         	browsers: ['last 2 versions'],
         	cascade: false
         	}))
         .pipe(concatCss('style.css'))
-        .pipe(gulp.dest("src/css"))
+        .pipe(gulp.dest(prName + "/css"))
         .pipe(browserSync.stream());
 });
 
