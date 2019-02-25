@@ -9,32 +9,48 @@
   transform: translateX(0px); }
 
 .radiobox:nth-of-type(1):checked ~ .dots .dots__wrap:after {
-  -webkit-transform: translate(-93px, -50%);
-  transform: translate(-93px, -50%); }
+  -webkit-transform: translate(-143px, -50%);
+  transform: translate(-143px, -50%); }
 
 .radiobox:nth-of-type(2):checked ~ .bg {
   -webkit-transform: translateX(-360px);
   transform: translateX(-360px); }
 
 .radiobox:nth-of-type(2):checked ~ .dots .dots__wrap:after {
-  -webkit-transform: translate(-43px, -50%);
-  transform: translate(-43px, -50%); }
+  -webkit-transform: translate(-93px, -50%);
+  transform: translate(-93px, -50%); }
 
 .radiobox:nth-of-type(3):checked ~ .bg {
   -webkit-transform: translateX(-720px);
   transform: translateX(-720px); }
 
 .radiobox:nth-of-type(3):checked ~ .dots .dots__wrap:after {
-  -webkit-transform: translate(7px, -50%);
-  transform: translate(7px, -50%); }
+  -webkit-transform: translate(-43px, -50%);
+  transform: translate(-43px, -50%); }
 
 .radiobox:nth-of-type(4):checked ~ .bg {
   -webkit-transform: translateX(-1080px);
   transform: translateX(-1080px); }
 
 .radiobox:nth-of-type(4):checked ~ .dots .dots__wrap:after {
+  -webkit-transform: translate(7px, -50%);
+  transform: translate(7px, -50%); }
+
+.radiobox:nth-of-type(5):checked ~ .bg {
+  -webkit-transform: translateX(-1440px);
+  transform: translateX(-1440px); }
+
+.radiobox:nth-of-type(5):checked ~ .dots .dots__wrap:after {
   -webkit-transform: translate(57px, -50%);
   transform: translate(57px, -50%); }
+
+.radiobox:nth-of-type(6):checked ~ .bg {
+  -webkit-transform: translateX(-1800px);
+  transform: translateX(-1800px); }
+
+.radiobox:nth-of-type(6):checked ~ .dots .dots__wrap:after {
+  -webkit-transform: translate(107px, -50%);
+  transform: translate(107px, -50%); }
 
 body {
   background: rgba(0, 0, 0, 0.8);
@@ -50,10 +66,10 @@ body {
   height: 100vh; }
 
 .bg {
-  width: 1440px;
+  width: 2160px;
   height: 360px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#16675e), color-stop(25%, #16675e), color-stop(25%, #329c98), color-stop(50%, #329c98), color-stop(50%, #59b8ba), color-stop(75%, #59b8ba), color-stop(75%, #5FE6EC), to(#5FE6EC));
-  background-image: linear-gradient(90deg, #16675e 0%, #16675e 25%, #329c98 25%, #329c98 50%, #59b8ba 50%, #59b8ba 75%, #5FE6EC 75%, #5FE6EC 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#16675e), color-stop(16.66667%, #16675e), color-stop(16.66667%, #329c98), color-stop(33.33333%, #329c98), color-stop(33.33333%, #59b8ba), color-stop(50%, #59b8ba), color-stop(50%, #5FE6EC), color-stop(66.66667%, #5FE6EC), color-stop(66.66667%, #59b8ba), color-stop(83.33333%, #59b8ba), color-stop(83.33333%, #5FE6EC), to(#5FE6EC));
+  background-image: linear-gradient(90deg, #16675e 0%, #16675e 16.66667%, #329c98 16.66667%, #329c98 33.33333%, #59b8ba 33.33333%, #59b8ba 50%, #5FE6EC 50%, #5FE6EC 66.66667%, #59b8ba 66.66667%, #59b8ba 83.33333%, #5FE6EC 83.33333%, #5FE6EC 100%);
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
@@ -101,8 +117,8 @@ body {
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
         cursor: pointer;
-        -webkit-transform: translate(-93px, -50%);
-        transform: translate(-93px, -50%); }
+        -webkit-transform: translate(-143px, -50%);
+        transform: translate(-143px, -50%); }
 
 .radiobox {
   display: none; }
