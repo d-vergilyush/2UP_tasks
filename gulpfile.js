@@ -1,4 +1,4 @@
-var prName = 'homeWork_1';
+var prName = 'homeWork_2';
 
 var gulp                = require('gulp');
 var browserSync         = require('browser-sync');
@@ -24,7 +24,7 @@ gulp.task('sass', function() {
         	browsers: ['last 2 versions'],
         	cascade: false
         	}))
-        .pipe(concatCss('style.css'))
+        
         .pipe(gulp.dest(prName + "/css"))
         .pipe(browserSync.stream());
 });
