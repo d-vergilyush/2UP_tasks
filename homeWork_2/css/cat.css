@@ -10,7 +10,7 @@ a {
     outline: none; }
 
 body {
-  background: url(https://img.freepik.com/darmowe-wektory/bezszwowe-sk%C5%82adniki-pizzy_1176-269.jpg?size=338&ext=jpg) center repeat; }
+  background: url(../img/bg.jpg) center repeat; }
 
 .cat__wrap {
   position: relative;
