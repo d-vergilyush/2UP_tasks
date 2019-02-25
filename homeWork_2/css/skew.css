@@ -19,10 +19,10 @@ body {
 
 .skew {
   position: relative;
-  width: 85%;
+  width: 80%;
   margin: 7rem auto;
-  height: 20rem;
-  max-height: 95vh;
+  height: 18rem;
+  max-height: 95vmax;
   border-radius: .2rem;
   -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); }

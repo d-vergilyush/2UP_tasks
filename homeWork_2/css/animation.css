@@ -9,48 +9,48 @@
   transform: translateX(0px); }
 
 .radiobox:nth-of-type(1):checked ~ .dots .dots__wrap:after {
-  -webkit-transform: translate(-143px, -50%);
-  transform: translate(-143px, -50%); }
+  -webkit-transform: translate(-148px, -50%);
+  transform: translate(-148px, -50%); }
 
 .radiobox:nth-of-type(2):checked ~ .bg {
   -webkit-transform: translateX(-360px);
   transform: translateX(-360px); }
 
 .radiobox:nth-of-type(2):checked ~ .dots .dots__wrap:after {
-  -webkit-transform: translate(-93px, -50%);
-  transform: translate(-93px, -50%); }
+  -webkit-transform: translate(-96px, -50%);
+  transform: translate(-96px, -50%); }
 
 .radiobox:nth-of-type(3):checked ~ .bg {
   -webkit-transform: translateX(-720px);
   transform: translateX(-720px); }
 
 .radiobox:nth-of-type(3):checked ~ .dots .dots__wrap:after {
-  -webkit-transform: translate(-43px, -50%);
-  transform: translate(-43px, -50%); }
+  -webkit-transform: translate(-44px, -50%);
+  transform: translate(-44px, -50%); }
 
 .radiobox:nth-of-type(4):checked ~ .bg {
   -webkit-transform: translateX(-1080px);
   transform: translateX(-1080px); }
 
 .radiobox:nth-of-type(4):checked ~ .dots .dots__wrap:after {
-  -webkit-transform: translate(7px, -50%);
-  transform: translate(7px, -50%); }
+  -webkit-transform: translate(8px, -50%);
+  transform: translate(8px, -50%); }
 
 .radiobox:nth-of-type(5):checked ~ .bg {
   -webkit-transform: translateX(-1440px);
   transform: translateX(-1440px); }
 
 .radiobox:nth-of-type(5):checked ~ .dots .dots__wrap:after {
-  -webkit-transform: translate(57px, -50%);
-  transform: translate(57px, -50%); }
+  -webkit-transform: translate(60px, -50%);
+  transform: translate(60px, -50%); }
 
 .radiobox:nth-of-type(6):checked ~ .bg {
   -webkit-transform: translateX(-1800px);
   transform: translateX(-1800px); }
 
 .radiobox:nth-of-type(6):checked ~ .dots .dots__wrap:after {
-  -webkit-transform: translate(107px, -50%);
-  transform: translate(107px, -50%); }
+  -webkit-transform: translate(112px, -50%);
+  transform: translate(112px, -50%); }
 
 body {
   background: rgba(0, 0, 0, 0.8);
@@ -84,8 +84,8 @@ body {
   border: 2px solid white;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 100%;
   cursor: pointer; }
   .dot:not(:last-of-type) {
@@ -117,8 +117,8 @@ body {
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
         cursor: pointer;
-        -webkit-transform: translate(-143px, -50%);
-        transform: translate(-143px, -50%); }
+        -webkit-transform: translate(-148px, -50%);
+        transform: translate(-148px, -50%); }
 
 .radiobox {
   display: none; }
