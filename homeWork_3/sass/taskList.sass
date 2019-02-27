@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400)
+
+$font: 'Open Sans', Helvetica, sans-serif
+
+// Colors
+$gray: #757575
+$lightGray: #C8D4D9
+
+*
+  margin: 0
+  outline: none
+  box-sizing: border-box
+
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  font-family: $font
+  font-size: 15px
+  font-weight: 400
+
+.task-list
+  width: 450px
+  height: 450px
+  display: flex
+  align-items: center
+  justify-content: center
+  color: $gray
+  background: #fcba30
+  border-radius: 2px
+  box-shadow: 2px 2px 12px 0 rgba(#000, 0.2)
+  &__card
+    padding: 30px
+    width: 60%
+    background: #fff
+    border-radius: 3px
+    box-shadow: 3px 6px 20px -4px rgba($gray, 0.7)
+  &__header
+    text-align: center
+    padding-bottom: 25px
+    border-bottom: 1px solid $lightGray
+  &__title
+    font-size: 1.4em
+    font-weight: 600
+  &__date
+    font-size: 0.8em
+  &__container
+    padding-top: 25px
+  &__item
+    padding: 7px 0
+    &:not(:last-of-type)
+      margin-bottom: 10px
+  &__label
+    display: flex
+    justify-content: space-between
+    align-items: center
+    cursor: pointer
+  &__caption
+    transition: 0.4s ease-in-out
+  &__checkbox
+    width: 15px
+    height: 15px
+    position: relative
+    &:before
+      position: absolute
+      top: 50%
+      left: 50%
+      content: ''
+      width: 15px
+      height: 15px
+      border-radius: 50%
+      border: 1px solid #4c6c79
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.2)
+      transform: translate(-50%, -50%)
+      transition: 0.4s ease-in-out
+    &-icon
+      position: absolute
+      stroke: $lightGray
+      fill: none
+      stroke-width: 1.5
+      stroke-dasharray: 30 30
+      stroke-dashoffset: 30
+      width: 15px
+      height: 10px
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      transition: 0.4s ease-in-out
+  &__input
+    display: none
+    &:checked ~
+      .task-list__checkbox
+        &:before
+          opacity: 0
+          transform: translate(-50%, -50%) scale(1.5)
+          transition: 0.4s ease-in-out
+        .task-list__checkbox-icon
+          stroke-dashoffset: 0
+          transition: 0.4s ease-in-out
+      .task-list__caption
+        color: $lightGray
