@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:900)
+
+$height: 60vmin
+$width: calc(100vw/3)
+$bgColor1: #e67f22
+$bgColor2: #33495e
+$font: 'Lato', sans-serif
+
+*
+    margin: 0
+    outline: none
+    box-sizing: border-box
+
+a
+    text-decoration: none
+    color: inherit
+
+body
+    background-color: #fff
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+    font-family: $font
+    font-weight: 900
+    color: #fff
+
+.slider
+    height: $height
+    width: $width
+    max-width: $height
+    display: flex
+    overflow: hidden
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .4)
+    background-color: $bgColor1
+    @media screen and (max-width: 768px)
+        min-width: $height
+    @media screen and (max-width: 450px)
+        width: calc(100vmin - 30px)
+    &__item
+        background-color: $bgColor1
+        flex-grow: 1
+        height: 100%
+        transition: flex 0.7s ease
+        display: flex
+        align-items: center
+        justify-content: center
+        overflow: hidden
+        &:nth-child(odd)
+            background-color: $bgColor2
+        &:hover
+            flex-grow: 8
+        &:hover
+            .slider__text
+                display: block
+                font-size: 1.7rem
+                display: flex
+                justify-content: center
+                align-items: center
+                opacity: 1
+                @media screen and (max-width: 450px)
+                    font-size: 1.1rem
+    &__text
+        display: none
+        font-size: 0
+        text-align: center
+        transition: all 0.6s ease
+        text-transform: uppercase
+        height: 100%
+        width: 100%
+        padding: 15px
+        display: flex
+        justify-content: center
+        align-items: center
+        opacity: 0
+        @media screen and (max-width: 450px)
+            line-height: 1.1rem
+
+
+
