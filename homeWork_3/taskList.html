@@ -20,9 +20,7 @@
               <input class="task-list__input" type="checkbox"/>
               <span class="task-list__caption">Create a list</span>
               <div class="task-list__checkbox">
-                <svg class="task-list__checkbox-icon">
-                  <polyline points="1,5 6,9 14,1" />
-                </svg>
+                <svg class="task-list__checkbox-icon"><use xlink:href="#check"></use></svg>
               </div>
             </label>
           </li>
@@ -31,9 +29,7 @@
               <input  class="task-list__input" type="checkbox"/>
               <span class="task-list__caption">Complete first task</span>
               <div class="task-list__checkbox">
-                <svg class="task-list__checkbox-icon">
-                  <polyline points="1,5 6,9 14,1" />
-                </svg>
+                <svg class="task-list__checkbox-icon"><use xlink:href="#check"></use></svg>
               </div>
             </label>
           </li>
@@ -42,9 +38,7 @@
               <input  class="task-list__input" type="checkbox"/>
               <span class="task-list__caption">Write some CSS code</span>
               <div class="task-list__checkbox">
-                <svg class="task-list__checkbox-icon">
-                  <polyline points="1,5 6,9 14,1" />
-                </svg>
+                <svg class="task-list__checkbox-icon"><use xlink:href="#check"></use></svg>
               </div>
             </label>
           </li>
@@ -53,14 +47,17 @@
               <input  class="task-list__input" type="checkbox"/>
               <span class="task-list__caption">Amaze the world</span>
               <div class="task-list__checkbox">
-                <svg class="task-list__checkbox-icon">
-                  <polyline points="1,5 6,9 14,1" />
-                </svg>
+                <svg class="task-list__checkbox-icon"><use xlink:href="#check"></use></svg>
               </div>
             </label>
           </li>
         </ul>
       </div>
     </div>
+    <svg style="display: none;">
+      <symbol id="check">
+        <polyline points="1,5 6,9 14,1" />
+      </symbol>
+    </svg>
   </body>
 </html>

@@ -62,7 +62,7 @@ body
     align-items: center
     cursor: pointer
   &__caption
-    transition: 0.4s ease-in-out
+    transition: 0.4s ease-in
   &__checkbox
     width: 15px
     height: 15px
@@ -78,7 +78,7 @@ body
       border: 1px solid #4c6c79
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.2)
       transform: translate(-50%, -50%)
-      transition: 0.4s ease-in-out
+      transition: 0.4s ease-in
     &-icon
       position: absolute
       stroke: $lightGray
@@ -91,7 +91,7 @@ body
       top: 50%
       left: 50%
       transform: translate(-50%, -50%)
-      transition: 0.4s ease-in-out
+      transition: 0.4s ease-in
   &__input
     display: none
     &:checked ~
@@ -99,9 +99,9 @@ body
         &:before
           opacity: 0
           transform: translate(-50%, -50%) scale(1.5)
-          transition: 0.4s ease-in-out
+          transition: 0.4s ease-in
         .task-list__checkbox-icon
           stroke-dashoffset: 0
-          transition: 0.4s ease-in-out
+          transition: 0.4s ease-in
       .task-list__caption
         color: $lightGray
