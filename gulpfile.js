@@ -1,10 +1,11 @@
-var prName = 'homeWork_3';
+var prName = 'homeWork_4';
 
 var gulp                = require('gulp');
 var browserSync         = require('browser-sync');
 var sass                = require('gulp-sass');
 var autoprefixer        = require('gulp-autoprefixer');
 var concatCss           = require('gulp-concat-css');
+var svgSprite           = require('gulp-svg-sprite');
 
 
 gulp.task('serve', ['sass'], function() {
@@ -24,9 +25,22 @@ gulp.task('sass', function() {
         	browsers: ['last 2 versions'],
         	cascade: false
         	}))
-        
+        .pipe(concatCss('style.css'))
         .pipe(gulp.dest(prName + "/css"))
         .pipe(browserSync.stream());
+});
+
+gulp.task('svgSprite', function () {
+    return gulp.src(prName + "/img/sprite/*.svg") // svg files for sprite
+        .pipe(svgSprite({
+                mode: {
+                    stack: {
+                        sprite: "../sprite.svg"  //sprite file name
+                    }
+                },
+            }
+        ))
+        .pipe(gulp.dest(prName + "/img/icons"));
 });
 
 gulp.task('default', ['serve']);

@@ -1,0 +1,66 @@
+.footer
+	padding: 55px 0 140px
+	@media (max-width: $md)
+		padding: 55px 0 80px
+	&__text
+		color: $wt
+		line-height: 20px
+	&__widgets
+		display: flex
+		justify-content: space-between
+		@media (max-width: $lg)
+			justify-content: space-between
+		@media (max-width: $sm)
+			flex-direction: column-reverse
+			// padding: 0 30px
+
+
+	&__contacts
+		display: flex
+		flex-direction: column
+		margin-right: 30px
+		@media (max-width: $sm)
+			margin-right: 0
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: flex-start
+		&-item
+			&:not(:last-child)
+				margin-bottom: 5px
+				@media (max-width: $sm)
+					margin-right: 15px
+		&-phone, &-email
+			@media(min-width: $lg)
+				&:hover
+					color: $accent
+	&__link
+		@media(min-width: $lg)
+			&:hover
+				color: $accent
+		&s
+			display: flex
+			@media (max-width: $sm)
+				flex-wrap: wrap
+				margin-bottom: 30px
+				justify-content: space-between
+		&-col
+			display: flex
+			flex-direction: column
+			width: 130px
+			@media (max-width: $lg)
+				width: 100px
+			&:not(:last-of-type)
+				margin-right: 33px
+				@media (max-width: $lg)
+					margin-right: 20px
+			@media (max-width: $md)
+				width: auto
+				&:not(:last-of-type)
+					margin-right: 20px
+			// @media (max-width: $sm)
+			// 	width: calc(50% - 30px)
+			// 	&:not(:last-of-type)
+			// 		margin-right: 0
+
+

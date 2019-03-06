@@ -1,0 +1,43 @@
+.subscribe
+	padding: 92px 0 70px
+	@media (max-width: $lg)
+		padding: 80px 0 50px
+	&__subtitle
+		margin-bottom: 40px
+		color: $def
+	&__form
+		margin-bottom: 76px
+		display: flex
+		align-items: center
+		justify-content: center
+		@media (max-width: $sm)
+			flex-direction: column
+			margin-bottom: 40px
+	&__field
+		margin-right: 21px
+		width: 580px
+		@media (max-width: $lg)
+			width: 500px
+		@media (max-width: $md)
+			width: 70%
+		@media (max-width: $sm)
+			margin-right: 0
+			margin-bottom: 15px
+			width: 90%
+	&__social
+		display: flex
+		justify-content: center
+		margin: 0 auto
+		transform: translateX(-30px) // сдвиг влево согласно макету
+		@media (max-width: $lg)
+			transform: none
+		&-icon
+			color: $accent
+			font-size: 42px
+			
+			&:hover
+				color: $wt
+				i
+					transition: .2s ease-in
+			&:not(:last-child)
+				margin-right: 33px
