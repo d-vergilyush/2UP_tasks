@@ -844,6 +844,10 @@ textarea {
   }
 }
 
+.footer__contacts-line {
+  display: block;
+}
+
 .footer__contacts-item:not(:last-child) {
   margin-bottom: 5px;
 }
