@@ -1,6 +1,7 @@
 @import "vars"
 @import "fonts"
 @import "helpers"
+@import "interface"
 
 ::placeholder
 	color: $def
@@ -35,16 +36,18 @@ input, textarea
 	outline: none
 
 .container
-  margin: 0 auto
-  max-width: calc(100% - 30px)
-  @media (min-width: $xs)
-    max-width: 450px
-  @media (min-width: $sm)
-    max-width: 540px
-  @media (min-width: $md)
-    max-width: 720px
-  @media (min-width: $lg)
-    max-width: 930px
+	margin: 0 auto
+	max-width: calc(100% - 30px)
+	@media (min-width: $xs)
+		max-width: 450px
+	@media (min-width: $sm)
+		max-width: 540px
+	@media (min-width: $md)
+		max-width: 720px
+	@media (min-width: $lg)
+		max-width: 930px
+	@media (min-width: $xxl)
+		max-width: 1140px
 
 @import "blocks/header"
 @import "blocks/main"

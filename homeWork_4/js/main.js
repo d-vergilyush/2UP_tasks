@@ -1,9 +1,9 @@
 window.addEventListener('DOMContentLoaded', function () {
 
+	const slides = document.getElementsByClassName('jsSliderItem');
+	const dotsWrap = document.querySelector('.jsSliderDots');
+	const dots = document.querySelectorAll('.jsSliderDot');
 	let slideIndex = 1;
-	let slides = document.getElementsByClassName('jsSliderItem');
-	let dotsWrap = document.querySelector('.jsSliderDots');
-	let dots = document.querySelectorAll('.jsSliderDot');
 
 	showSlides(slideIndex);
 

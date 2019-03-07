@@ -1,0 +1,89 @@
+button
+		&:focus
+				outline: none
+				cursor: pointer
+a
+		text-decoration: none
+		color: inherit
+		font-size: inherit
+		font-weight: inherit
+		transition: all .3s ease
+		@media(min-width: $lg)
+				&:hover
+						text-decoration: none
+						color: inherit
+		&:focus
+				outline: none
+ul
+		margin: 0
+		padding-left: 0
+		list-style: none
+img
+		max-width: 100%
+		height: auto
+
+input
+		padding: 15px 24px 14px
+		font-family: $default-font
+		border-radius: 5px
+		font-size: 16px
+		line-height: 1
+		color: $def
+		border: none
+.section-title
+		margin-bottom: 17px
+		color: $dark
+		font-size: 32px
+		font-weight: 700
+		line-height: 1
+		&_accent
+				color: $accent
+		@media (max-width: $lg)
+				font-size: 29px
+.section-subtitle
+		font-size: 20px
+		color: $subtitle
+		max-width: 740px
+		margin: 0 auto
+		@media (max-width: $lg)
+				font-size: 18px
+.btn
+		border: 2px solid $accent
+		padding: 16px 35px 15px
+		background-color: $accent
+		border-radius: 5px
+		text-transform: uppercase
+		font-size: 16px
+		font-weight: 700
+		line-height: 1
+		user-select: none
+		cursor: pointer
+		transition: .3s ease-out
+		@media (max-width: $sm)
+				padding: 17px 40px 16px
+		&:hover
+				background-color: #000
+				color: $wt
+		&__icon
+				font-size: 22px
+		&_transp
+				width: 186px
+				padding: 12px 35px
+				border: 2px solid #000
+				color: #2d2d2d
+				display: flex
+				align-items: center
+				justify-content: space-between
+
+.svg-iPad
+		&__case
+				fill: #fff
+		&__screen
+				fill: #000
+				stroke: #000
+		&__button
+				fill: #fafafa
+				stroke: #000
+		&__shadow
+				fill: #fff
+

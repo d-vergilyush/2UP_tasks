@@ -2,9 +2,12 @@
 	padding: 55px 0 140px
 	@media (max-width: $md)
 		padding: 55px 0 80px
+	@media (max-width: $sm)
+		padding: 55px 0 50px
 	&__text
 		color: $wt
 		line-height: 20px
+		font-style: normal
 	&__widgets
 		display: flex
 		justify-content: space-between
@@ -12,27 +15,34 @@
 			justify-content: space-between
 		@media (max-width: $sm)
 			flex-direction: column-reverse
+
 	&__contacts
-		display: flex
-		flex-direction: column
 		margin-right: 30px
+		max-width: 190px
+		@media (min-width: $xxl)
+			max-width: initial
 		@media (max-width: $sm)
+			max-width: initial
 			margin-right: 0
-			flex-direction: row
-			flex-wrap: wrap
-			justify-content: space-between
-			align-items: flex-start
+			text-align: center
 		&-line
 			display: block
 		&-item
-			&:not(:last-child)
-				margin-bottom: 5px
-				@media (max-width: $sm)
-					margin-right: 15px
+		&-company
+			display: inline-block
+		&-address
+			margin-bottom: 5px
+			@media (min-width: $xxl)
+				display: inline
+			@media (max-width: $sm)
+				display: inline-block
 		&-phone, &-email
 			@media(min-width: $lg)
 				&:hover
 					color: $accent
+			@media (max-width: $sm)
+				display: block
+
 	&__link
 		@media(min-width: $lg)
 			&:hover
@@ -41,7 +51,7 @@
 			display: flex
 			@media (max-width: $sm)
 				flex-wrap: wrap
-				margin-bottom: 30px
+				margin-bottom: 50px
 				justify-content: space-between
 		&-col
 			display: flex
