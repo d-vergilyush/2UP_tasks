@@ -1,0 +1,39 @@
+.header
+	position: absolute
+	top: 60px
+	left: 0
+	width: 100%
+	@media (max-width: $sm)
+		top: 50px
+	&__line
+		display: flex
+		align-items: center
+		justify-content: space-between
+		@media (max-width: $sm)
+			flex-direction: column
+			justify-content: flex-start
+
+	&__logo
+		&-wrap
+			width: 149px
+			@media (max-width: $lg)
+				width: 135px
+			@media (max-width: $lg)
+				margin-bottom: 20px
+				width: 149px
+		&-link
+			display: block
+	&__nav
+		&-list
+			display: flex
+		&-item
+			color: $dark
+			font-size: 22px
+			font-weight: 700
+			@media (max-width: $lg)
+				font-size: 20px
+			&:not(:last-of-type)
+				margin-right: 70px
+				@media (max-width: $lg)
+					margin-right: 50px
+	&__

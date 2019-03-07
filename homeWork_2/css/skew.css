@@ -20,7 +20,6 @@ body {
 .skew {
   position: relative;
   width: 80%;
-  margin: 7rem auto;
   height: 18rem;
   max-height: 95vmax;
   border-radius: .2rem;
@@ -28,6 +27,7 @@ body {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); }
   .skew__item {
     position: absolute;
+    top: 0;
     width: 60%;
     height: inherit;
     overflow: hidden; }

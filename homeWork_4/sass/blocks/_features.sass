@@ -1,0 +1,53 @@
+.features
+	padding: 113px 0 62px
+	background-color: $wt
+	@media (max-width: $lg)
+		padding: 80px 0 50px
+	&__title
+	&__subtitle
+		margin-bottom: 83px
+	&__list
+		display: flex
+		width: 100%
+		flex-wrap: wrap
+		justify-content: space-between
+	&__item
+		margin: 0 0 82px 0
+		width: calc((100% - 35px * 2) / 3)
+		display: flex
+		@media (max-width: $lg)
+			margin: 0 0 62px 0
+			width: calc((100% - 30px * 2) / 3)
+		@media (max-width: $md)
+			margin: 0 0 62px 0
+			width: calc(50% - 30px)
+		@media (max-width: $sm)
+			margin: 0 0 30px 0
+			width: 100%
+		&-icon
+			width: 50px
+			margin-right: 23px
+			font-size: 50px
+			line-height: 1
+			color: $dark
+			text-align: center
+			@media (max-width: $lg)
+				width: 42px
+				margin-right: 20px
+				font-size: 42px
+		&-text
+			width: calc(100% - 73px)
+		&-head
+			display: block
+			margin-bottom: 12px
+			font-size: 22px
+			color: $dark
+			@media (max-width: $lg)
+				font-size: 20px
+				line-height: 1.1
+				min-height: 44px
+				@media (max-width: $sm)
+					min-height: initial
+		&-body
+			line-height: 20px
+
