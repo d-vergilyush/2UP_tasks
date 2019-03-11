@@ -80,15 +80,11 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	// function bindFunction(fn) {
 	// 	let args = [].slice.call(arguments, 1);
-	// 	return () => {
-	// 		return fn.apply(null, args);
-	// 	};
+	// 	return () => fn.apply(null, args);
 	// }
 
 	function bindFunction(fn, ...args) {
-		return () => {
-			return fn(...args);
-		};
+		return () => fn(...args);
 	}
 
 	let newSum = bindFunction(concatArguments, 'здесь', 3, 'аргумента');
