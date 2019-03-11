@@ -83,7 +83,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	function slice(array, from = 0, to = array.length) {
 		var newArray = [];
 
-		if (from < 0 && from > array.length) {
+		if (from < 0 && Math.abs(from) > array.length) {
 			from = 0;
 		} if (from < 0) {
 			from = array.length + from;
