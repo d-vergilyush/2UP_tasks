@@ -8,11 +8,13 @@
 		@media (max-width: $sm)
 			margin-top: 140px
 		&-item
-			display: flex
+			display: none
 			justify-content: space-between
 			padding-bottom: 58px
 			@media (max-width: $sm)
 				justify-content: center
+			&_active
+				display: flex
 		&-text
 			padding-top: 68px
 			max-width: 392px
@@ -57,7 +59,7 @@
 			background-color: rgba($wt, 0.5)
 			border-radius: 50%
 			cursor: pointer
-			&.active
+			&_active
 				background-color: $wt
 			&:not(:last-child)
 				margin-right: 7px
@@ -82,18 +84,15 @@
 		&-iPad
 			width: 100%
 			height: 100%
+			&_wt
+				fill: #ffffff
+				color: #000000
 			&_bl
-				.svg-iPad
-					&__case
-						fill: #000
-					&__screen
-						fill: #fff
-						stroke: #000
-					&__button
-						fill: #000
-						stroke: #fafafa
-					&__shadow
-						fill: #000
+				fill: #000000
+				color: #ffffff
+			&_yell
+				fill: #000000
+				color: $accent
 		&-logo
 			position: absolute
 			top: 197px
